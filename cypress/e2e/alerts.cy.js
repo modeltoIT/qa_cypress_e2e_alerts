@@ -15,7 +15,7 @@ describe('Cypress application', () => {
     });
   });
 
-  it('should have the ability to assert scheduled allert', () => {
+  it('should have the ability to assert scheduled alert', () => {
     const stub = cy.stub();
     Cypress.on('window:alert', stub);
 
@@ -27,7 +27,7 @@ describe('Cypress application', () => {
       });
   });
 
-  it('should autimatically resolve alerts', () => {
+  it('should automatically resolve alerts', () => {
     const stub = cy.stub();
     Cypress.on('window:confirm', stub);
 
@@ -49,7 +49,7 @@ describe('Cypress application', () => {
     });
   });
 
-  it('should have the ability to enter text to alert', () => {
+  it('should have the ability to enter text into prompt', () => {
     const firstName = faker.person.firstName();
 
     cy.window().then((win) => {
